@@ -1,0 +1,207 @@
+/* COLORS */
+:root {
+    --text: rgba(70, 63, 58); /* #463f3a */
+    --dark: rgba(138, 129, 124); /* #8a817c */
+    --accent: rgba(224, 175, 160); /* #E0AFA0 */
+    --accent-dark: rgba(140, 109, 100); /* #8C6D64 */
+    --light-1: rgba(188, 184, 177); /* #bcb8b1 */
+    --light-2: rgba(244, 243, 238); /* #f4f3ee */
+}
+
+::-moz-selection {
+    background: var(--dark);
+    color: white;
+}
+
+::selection {
+    background: var(--dark);
+    color: white;
+}
+
+/* GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Mulish;
+    font-size: calc(14px + 0.4vw);
+    line-height: calc(24px + 0.6vw);
+    font-weight: 300;
+    color: var(--text);
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+p {
+    margin-bottom: calc(10px + 0.5vw);
+    transition: 0.5s;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+.emphasis {
+    font-style: italic;
+    letter-spacing: calc(1px + 0.1vw);
+    font-family: Charis SIL;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.center {
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: Be Vietnam Pro;
+    font-weight: 800;
+}
+
+h1 {
+    color: var(--accent);
+    text-align: center;
+    font-size: calc(20px + 1.2vw);
+    line-height: calc(40px + 1vw);
+    letter-spacing: calc(1.5px + 0.1vw);
+    transition: 0.5s;
+}
+
+h3 {
+    font-size: calc(18px + 1vw);
+    line-height: calc(36px + 2vw);
+    letter-spacing: calc(3px + 0.3vw);
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--light-2);
+    margin-bottom: calc(18px + 2vw);
+}
+
+a, .link {
+    text-decoration: none;
+    color: var(--dark);
+    font-weight: 400;
+    transition: 0.5s;
+}
+
+a.emphasis {
+    font-style: normal;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+a:hover, .link:hover {
+   opacity: 0.8;
+}
+
+#content {
+    padding: calc(20px + 2vw) calc(40px + 2vw);
+}
+
+/* ADD INPUT + BUTTON */
+#add-todo {
+    margin-top: calc(20px + 0.2vw);
+    transition: 0.5s;
+}
+
+/* Input + add button styling adapted from W3schools */
+input[type="text"] {
+    border: 1px solid var(--accent);
+    border-right: none;
+    margin: 0;
+    border-radius: 5px 0 0 5px;
+    width: 75%;
+    padding: 12.5px 20px;
+    float: left;
+    font-family: Mulish;
+    font-size: calc(14px + 0.4vw);
+}
+
+input:focus-visible, input:focus, input:active,
+input:focus-within, input:focus-visible {
+    outline-color: var(--accent-dark);
+    transition: 0.5s;
+}
+
+#add-button {
+    padding: 10px;
+    width: 25%;
+    background: var(--accent);
+    color: white;
+    float: left;
+    text-align: center;
+    font-size: calc(14px + 0.4vw);
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 0 5px 5px 0;
+  }
+
+  #add-button:hover {
+    background: var(--accent-dark);
+    transition: 0.5s;
+  }
+
+  /* THE LIST */
+  #list {
+    padding-top: calc(80px + 0.4vw);
+  }
+
+  #list li {
+    display: block;
+    width: 100%;
+    background: var(--light-2);
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 0.5s;
+  }
+
+  #list li:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  #list li.done {
+    background: var(--light-1);
+  }
+
+  #list li.done label {
+    text-decoration: line-through;
+  }
+
+  input[type="checkbox"] {
+    margin-right: 10px;
+  }
+
+  /* OPTION MENU FOR LIST ITEMS */
+  .options {
+    display: inline;
+    float: right;
+  }
+
+  .options i {
+    cursor: pointer;
+    transition: 0.5s;
+    color: var(--dark);
+  }
+
+  .options i.disabled {
+    pointer-events: none;
+    color: var(--light-1);
+  }
+
+  .options i:hover {
+    color: var(--accent-dark);
+    transition: 0.5s;
+  }
+
+  .options i:not(:last-child) {
+    margin-right: 5px;
+  }
