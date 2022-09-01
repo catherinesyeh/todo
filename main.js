@@ -28,7 +28,7 @@ function createTodo(text) {
     })
 
     var label = document.createElement("LABEL"); // label
-    label.innerHTML = text;
+    label.innerHTML = " " + text;
 
     var options = document.createElement("DIV"); // options menu
     options.classList.add("options");
