@@ -14,4 +14,7 @@ Try these features out!
 
 Enjoy! :)
 
+## resources used
+I used/adapted some code fragments from this [W3 Schools](https://www.w3schools.com/howto/howto_js_todolist.asp) tutorial. I pointed these out more specifically in my comments.
+
 
