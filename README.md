@@ -1,6 +1,8 @@
 # todo
 Simple todo app made with pure Javascript, HTML, and CSS: [https://catherinesyeh.github.io/todo/](https://catherinesyeh.github.io/todo/)
 
+![Screenshot of todo app](img/screenshot.png)
+
 ## instructions
 Open [webpage](https://catherinesyeh.github.io/todo/) to start exploring. The app comes preloaded with a few todo items as an example.
 
